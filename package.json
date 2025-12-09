@@ -1,0 +1,65 @@
+{
+  "name": "utilifyx",
+  "version": "0.1.9",
+  "description": "A modern, lightweight utility toolkit for JavaScript & TypeScript",
+  "keywords": [
+    "utils",
+    "utility",
+    "toolkit",
+    "helper",
+    "lodash",
+    "javascript",
+    "typescript",
+    "deep-clone",
+    "deep-merge",
+    "array-utils",
+    "string-utils",
+    "date-utils",
+    "validation",
+    "async-utils",
+    "utilifyx"
+  ],
+  "license": "MIT",
+  "author": "Ashish Ingle <ashishingle589@gmail.com>",
+  "homepage": "https://github.com/ashishingle29/utilifyx#readme",
+  "bugs": {
+    "url": "https://github.com/ashishingle29/utilifyx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishingle29/utilifyx.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "echo \"Add linter\"",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  }
+}
