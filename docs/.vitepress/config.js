@@ -1,4 +1,5 @@
 export default {
+  base: "/utilifyx/", 
   title: "utilifyx",
   description: "Modern utility toolkit for JavaScript & TypeScript",
   themeConfig: {
